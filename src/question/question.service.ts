@@ -9,7 +9,7 @@ export class QuestionService {
   }
 
   findAll() {
-    return `This action returns all question`;
+    return `This action returns all questions`;
   }
 
   findOne(id: string) {
