@@ -24,12 +24,12 @@ export class QuestionController {
   }
 
   @Put(':id')
-  update(@Param('id') id: any, @Body() updateQuestionDto: UpdateQuestionDto) {
+  update(@Param('id') id: string, @Body() updateQuestionDto: UpdateQuestionDto) {
     return this.questionService.update(id, updateQuestionDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: any) {
+  remove(@Param('id') id: string) {
     return this.questionService.remove(id);
   }
 }
