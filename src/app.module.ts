@@ -7,6 +7,7 @@ import { QuestionModule } from './question/question.module';
 import { FaqModule } from './faq/faq.module';
 import { FaqCategoryModule } from './faq-category/faq-category.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     QuestionModule,
     FaqModule,
     FaqCategoryModule,
+    AuthenticationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
